@@ -1,17 +1,17 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-from instagram.tools.search import SearchTools
+from linkedin.tools.search import SearchTools
 
 # Uncomment the following line to use an example of a custom tool
-# from instagram.tools.custom_tool import MyCustomTool
+# from linkedin.tools.custom_tool import MyCustomTool
 
 # Check our tools documentations for more information on how to use them
 # from crewai_tools import SerperDevTool
 
 
 @CrewBase
-class InstagramCrew:
-    """Instagram crew"""
+class LinkedInCrew:
+    """LinkedIn crew"""
 
     agents_config = "config/agents.yaml"
     tasks_config = "config/tasks.yaml"
@@ -21,9 +21,9 @@ class InstagramCrew:
         return Agent(
             config=self.agents_config["market_researcher"],
             tools=[
-              SearchTools.search_internet,
-              SearchTools.search_instagram,
-              SearchTools.open_page,
+                SearchTools.search_internet,
+                SearchTools.search_linkedin,
+                SearchTools.open_page,
             ],
             verbose=True,
         )
@@ -72,6 +72,7 @@ class InstagramCrew:
         return Task(
             config=self.tasks_config["copywriting"],
             agent=self.copywriter(),
+            output_file="copywriting.md",
         )
 
     @task
@@ -84,7 +85,7 @@ class InstagramCrew:
 
     @crew
     def crew(self) -> Crew:
-        """Creates the Instagram crew"""
+        """Creates the LinkedIn crew"""
         return Crew(
             agents=self.agents,  # Automatically created by the @agent decorator
             tasks=self.tasks,  # Automatically created by the @task decorator

@@ -1,11 +1,11 @@
 market_research:
   description: >
-    Investigate the latest trends, hashtags, and competitor activities on Instagram specific to the industry of this Instagram account. Focus on gathering data that reveals what content performs well in the current year, identifying patterns, preferences, and emerging trends. 
+    Investigate the latest trends, hashtags, and competitor activities on LinkedIn specific to the industry of this LinkedIn account. Focus on gathering data that reveals what content performs well in the current year, identifying patterns, preferences, and emerging trends. 
 
     Current date: {current_date}
 
-    Description of the instagram account for which you are doing this research: 
-    <INSTAGRAM_ACCOUNT_DESCRIPTION>{instagram_description}</INSTAGRAM_ACCOUNT_DESCRIPTION>
+    Description of the LinkedIn account for which you are doing this research: 
+    <LinkedIn_ACCOUNT_DESCRIPTION>{LinkedIn_description}</LinkedIn_ACCOUNT_DESCRIPTION>
 
     Find the most relevant topics, hashtags and trends to use the the posts for next week. The focus of the following week is the following: 
     <NEXT_WEEK_CONTENT>{topic_of_the_week}</NEXT_WEEK_CONTENT>
@@ -21,7 +21,7 @@ content_strategy:
 
 visual_content_creation:
   description: >
-    Based on the content strategy for each Instagram post, create the the visual art that will be published on Instagram on each day of the week. To do that, you will need to create a detailed description of the image that you will use for each day. 
+    Based on the content strategy for each LinkedIn post, create the the visual art that will be published on LinkedIn on each day of the week. To do that, you will need to create a detailed description of the image that you will use for each day. 
     The descriptions that you will use need to be detailed, yet concise, and should include the main elements that should be present in the image. Describe the colors, the objects, the mood, and any other relevant information that you think is important for the image to be created.
 
     Here are some examples of the descriptions that you could use:
@@ -30,11 +30,11 @@ visual_content_creation:
     - A vibrant image of a tropical beach at sunset. The beach should be deserted, with palm trees swaying in the wind. The sky should be a mix of warm colors, with the sun setting on the horizon. The image should evoke a sense of relaxation and tranquility.
 
   expected_output: >
-    A markdown document with detailed descriptions of the images that will be used for each Instagram post of the week. Each description should be concise and include the main elements, colors, mood, and any other relevant information that will guide the creation of the image. The descriptions should align with the content calendar and the identified trends.
+    A markdown document with detailed descriptions of the images that will be used for each LinkedIn post of the week. Each description should be concise and include the main elements, colors, mood, and any other relevant information that will guide the creation of the image. The descriptions should align with the content calendar and the identified trends.
 
 copywriting:
   description: >
-    Write captivating and relevant copy for each Instagram post of the week, aligning to the strategic themes of the content calendar. The copy should engage the audience, embody the brand's voice, and encourage interaction. The copy should also be SEO-friendly and incorporate the relevant keywords and hashtags contained in the content schedule. 
+    Write captivating and relevant copy for each LinkedIn post of the week, aligning to the strategic themes of the content calendar. The copy should engage the audience, embody the brand's voice, and encourage interaction. The copy should also be SEO-friendly and incorporate the relevant keywords and hashtags contained in the content schedule. 
 
     Consider the following guidelines when writing the copy:
     - Keep the copy concise and engaging.
@@ -46,8 +46,15 @@ copywriting:
     - "Hello everyone! :heart: We're excited to share our latest collection with you. Check out our website for more details. #newcollection #fashion #style"
     - "Happy Monday! :sunflower: Start your week right with our delicious smoothies. Visit our store today! #smoothies #healthyliving #mondaymotivation"
     - "Feeling stressed? :massage: Treat yourself to a relaxing spa day. Book now and unwind in luxury. #spaday #relaxation #selfcare"
+
+    Consider the following guidelines when writing the article:
+    - It must have a minimum of 300 words.
+    - Keep the article engaging and informative.
+    - Include relevant keywords and hashtags.
+    - Ensure the article aligns with the brand's voice and tone.
+    - Include a call to action where appropriate.
   expected_output: >
-    A document formatted as markdown, with several sections. Each section should contain the copy for a single Instagram post, along with the relevant hashtags and calls to action. The copy should be engaging, on-brand, and aligned with the content calendar.
+    A document formatted as markdown, with several sections. Each section should contain the copy and an article for a single LinkedIn post, along with the relevant hashtags and calls to action. The copy and the article should be engaging, on-brand, and aligned with the content calendar.
 
 report_final_content_strategy:
   description: >
